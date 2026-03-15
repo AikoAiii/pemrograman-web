@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Atribut Global HTML</title>
+    <style>
+        /* class: Menentukan styling untuk grup elemen */
+        .box-container {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 10px;
+        }
+        /* style: Contoh styling tambahan via atribut style nanti */
+        .highlight { background-color: #f1c40f; padding: 5px; }
+        
+        /* Visualisasi untuk draggable */
+        [draggable="true"] { cursor: move; border: 1px dashed blue; }
+    </style>
+</head>
+<body>
+
+    <header id="main-header" title="Bagian Header Utama">
+        <h1>Belajar Atribut Global</h1>
+    </header>
+
+    <main class="box-container">
+        
+        <section tabindex="1">
+            <h2 accesskey="s">1. Input & Interaksi</h2>
+            
+            <div contenteditable="true" spellcheck="true" style="border: 1px solid #ccc; padding: 10px;">
+                Klik di sini dan coba ketik sesuatu (Ejaan akan diperiksa).
+            </div>
+        </section>
+
+        <hr>
+
+        <section tabindex="2">
+            <h2>2. Data & Pengaturan Teks</h2>
+            
+            <p data-user-id="12345" data-category="edukasi">
+                User ID kamu disimpan di atribut data. Nama brand kami adalah 
+                <span translate="no">"AikoTech"</span> (jangan diterjemahkan).
+            </p>
+
+            <p dir="rtl">Teks ini berjalan dari kanan ke kiri (seperti bahasa Arab).</p>
+        </section>
+
+        <hr>
+
+        <section tabindex="3">
+            <h2>3. Drag, Drop, dan Hidden</h2>
+            
+            <div draggable="true" style="width: 100px; background: #3498db; color: white; padding: 10px;">
+                Tarik Saya!
+            </div>
+
+            <div dropzone="move" style="height: 50px; border: 2px dashed #aaa; margin-top: 10px;">
+                Area Drop (Simulasi)
+            </div>
+
+            <p hidden>Pesan rahasia ini tidak akan terlihat di browser.</p>
+        </section>
+
+    </main>
+
+    <footer title="Informasi Hak Cipta">
+        <p>&copy; 2026 - Latihan Pemrograman Aiko-senpai</p>
+    </footer>
+
+</body>
+</html>
