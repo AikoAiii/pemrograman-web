@@ -1,0 +1,87 @@
+/* Base Style */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Form */
+.register-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Label & Input Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #3c4043;
+}
+
+/* Menargetkan semua input dengan class .form-field */
+.form-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    box-sizing: border-box; /* Sangat penting! */
+    transition: border-color 0.2s;
+}
+
+/* Gaya saat input sedang diketik (Focus) */
+.form-field:focus {
+    outline: none;
+    border-color: #1a73e8;
+    background-color: #f8fbff;
+}
+
+/* Gaya khusus untuk input Readonly */
+input[readonly] {
+    background-color: #f1f3f4;
+    color: #70757a;
+    cursor: not-allowed;
+}
+
+/* Gaya khusus untuk input Disabled */
+input:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #e8eaed;
+}
+
+/* Tombol Submit */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background-color: #1765cc;
+}

@@ -1,0 +1,64 @@
+/* Container Utama Dashboard */
+#dashboard {
+    padding: 20px;
+    background: #0d1117;
+    border: 2px solid #39ff14;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+body {
+    background-color: black;
+}
+/* Judul Dashboard */
+h2 {
+    color: #39ff14;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Styling Tabel */
+table {
+    width: 100%; /* Shortcut Emmet: width: 100% */
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: #e6edf3;
+    background-color: black;
+}
+
+th, td {
+    border: 1px solid #30363d;
+    padding: 12px;; /* Shortcut Emmet: padding: 12px */
+    text-align: left;
+}
+
+/* Header Tabel */
+thead {
+    background-color: rgba(57, 255, 20, 0.1);
+}
+
+th {
+    color: #39ff14;
+    font-size: 0.9rem;
+}
+
+/* Efek Baris Zebra (Zebra Stripes) */
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Hover Effect pada Baris */
+tbody tr:hover {
+    background-color: rgba(57, 255, 20, 0.05);
+    cursor: crosshair;
+}
+
+/* Status Selesai */
+td:contains("Selesai") {
+    color: #39ff14;
+    font-weight: bold;
+}

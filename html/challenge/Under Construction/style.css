@@ -1,0 +1,39 @@
+/* CSS untuk Tema Development Mode */
+body {
+    background-color: #0a0a0a; /* Hitam sangat gelap */
+    color: #39ff14;            /* Hijau Neon */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-shadow: 0 0 5px #39ff14; /* Efek cahaya neon */
+}
+
+h1 {
+    font-size: 3rem;
+    border-right: 3px solid #39ff14;
+    white-space: nowrap;
+    overflow: hidden;
+    /* Efek animasi mengetik */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Animasi untuk h1 */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #39ff14 }
+}

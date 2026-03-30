@@ -1,0 +1,131 @@
+3<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Event Teknologi 2026</title>
+    <style>
+        /* CSS Formal & Bersih */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        /* Mengatur jarak antar kelompok input */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        /* Gaya untuk label utama */
+        label.main-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #34495e;
+        }
+
+        /* Gaya untuk kotak input teks, email, dll */
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Agar padding tidak merusak lebar */
+        }
+
+        /* Gaya khusus untuk pilihan (Radio & Checkbox) */
+        .choice-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registrasi Peserta</h2>
+
+    <form action="#" method="POST">
+        
+        <div class="input-group">
+            <label class="main-label" for="nama-lengkap">Nama Lengkap:</label>
+            <input type="text" id="nama-lengkap" name="nama" placeholder="Masukkan nama sesuai ID" required>
+        </div>
+
+        <div class="input-group">
+            <label class="main-label" for="email-kantor">Email Kantor:</label>
+            <input type="email" id="email-kantor" name="email" placeholder="contoh@perusahaan.com" required>
+        </div>
+
+        <div class="input-group">
+            <label class="main-label" for="tgl-hadir">Rencana Kedatangan:</label>
+            <input type="date" id="tgl-hadir" name="tanggal">
+        </div>
+
+        <div class="input-group">
+            <span class="main-label">Kategori Peserta:</span>
+            
+            <div class="choice-group">
+                <input type="radio" id="role-pelajar" name="kategori" value="pelajar">
+                <label for="role-pelajar">Pelajar / Mahasiswa</label>
+            </div>
+
+            <div class="choice-group">
+                <input type="radio" id="role-pro" name="kategori" value="pro">
+                <label for="role-pro">Profesional</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="choice-group">
+                <input type="checkbox" id="setuju" name="syarat" required>
+                <label for="setuju">Saya menyetujui syarat dan ketentuan.</label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Daftar Sekarang</button>
+
+    </form>
+</div>
+
+</body>
+</html>
